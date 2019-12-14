@@ -1,7 +1,10 @@
+/**...*/
 /**
+ * <p>
  * A simple model for a consumer credit card.
  *
  * @author Thotsana Joshua Mabotsa.
+ * </p>
  */
 
 public class Main {

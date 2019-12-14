@@ -6,13 +6,16 @@ public class CreditCard {
     private int limit;                      // credit limit (measured in Rands)
     protected double balance;               // current balance (measured in Rands)
     // Constructors:
+    /** ... */
     /**
+     * <p>
      * Constructs a new credit card instance.
      * @param customer      the name of the customer (e.g, "Joshua Mabotsa)
      * @param bank          the name of the bank (e.g., "Standard Bank")
      * @param account       the account identifier (e.g, "5391 0375 9387 5309")
      * @param limit         the credit limit (measured in Rands)
      * @param balance       the initial balance (measured in Rands)
+     * </p>
      */
     public CreditCard(String customer, String bank, String account, int limit, double balance) {
         this.customer = customer;
