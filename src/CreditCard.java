@@ -5,8 +5,8 @@ public class CreditCard {
     private String account;                 // account identifier (e.g., "5391 0375 9387 5309")
     private int limit;                      // credit limit (measured in Rands)
     protected double balance;               // current balance (measured in Rands)
+
     // Constructors:
-    /** ... */
     /**
      * <p>
      * Constructs a new credit card instance.
@@ -27,14 +27,15 @@ public class CreditCard {
     public CreditCard(String customer, String bank, String account, int limit) {
         this(customer,bank,account,limit,0.0);              // use a balance of zero as default.
     }
+
     // Accessor methods:
     public String getCustomer() { return customer;}
     public String getBank() {return bank;}
     public String getAccount() {return account;}
     public int getLimit() {return limit;}
     public double getBalance() {return balance;}
-    // Update methods:
 
+    // Update methods:
     /**
      * Charges the given price to the card, assuming sufficient credit limit.
      * @param price the amount to be charged
@@ -55,6 +56,7 @@ public class CreditCard {
     public void makePayment(double amount) {                        // make a payment
         balance -= amount;
     }
+    
     // Utility method to print a card's information
     public static void printSummary(CreditCard card) {
         System.out.println("Customer = " + card.customer);
